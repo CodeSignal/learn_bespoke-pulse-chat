@@ -1,0 +1,23 @@
+{
+  "name": "learn_bespoke-pulse-chat",
+  "version": "0.0.1",
+  "description": "Pulse Chat - LLM-powered workplace messaging simulation",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start:prod",
+    "start:prod": "IS_PRODUCTION=true node server.js",
+    "start:dev": "concurrently \"npm run dev:vite\" \"npm run dev:api\"",
+    "dev:vite": "vite",
+    "dev:api": "PORT=3001 node server.js",
+    "build": "vite build",
+    "build:module": "vite build --config vite.config.module.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite": "^7.2.4"
+  }
+}

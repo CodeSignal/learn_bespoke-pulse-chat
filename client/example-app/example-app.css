@@ -1,0 +1,111 @@
+/* Example App Styles - Interactive Component Showcase */
+
+.bespoke .sidebar {
+  padding: var(--UI-Spacing-spacing-xl);
+  overflow-y: auto;
+}
+
+.bespoke .sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--UI-Spacing-spacing-xl);
+}
+
+.bespoke .sidebar-section h2 {
+  color: var(--Colors-Text-Body-Strongest);
+  margin: 0 0 var(--UI-Spacing-spacing-ml) 0;
+}
+
+.bespoke .control-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--UI-Spacing-spacing-s);
+}
+
+.bespoke .control-group label {
+  color: var(--Colors-Text-Body-Strong);
+}
+
+.bespoke .control-group .button {
+  width: 100%;
+}
+
+.bespoke .control-group-buttons {
+  flex-direction: row;
+  gap: var(--UI-Spacing-spacing-s);
+}
+
+.bespoke .control-group-buttons .button {
+  flex: 1;
+}
+
+.bespoke .content-area {
+  overflow-y: auto;
+  padding: var(--UI-Spacing-spacing-xl);
+}
+
+.bespoke .display-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--UI-Spacing-spacing-xl);
+}
+
+.bespoke .counter-display {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--UI-Spacing-spacing-xxxl);
+  text-align: center;
+}
+
+.bespoke .counter-display h2 {
+  color: var(--Colors-Text-Body-Strong);
+  margin: 0 0 var(--UI-Spacing-spacing-ml) 0;
+  text-align: center;
+}
+
+.bespoke .counter-value {
+  font-size: var(--Fonts-Headlines-xxl);
+  font-weight: 500;
+  font-family: var(--heading-family);
+  color: var(--Colors-Text-Body-Strongest);
+  line-height: 1;
+  text-align: center;
+}
+
+.bespoke .tags-container {
+  display: flex;
+  gap: var(--UI-Spacing-spacing-ml);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bespoke .settings-display {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--UI-Spacing-spacing-xl);
+}
+
+.bespoke .settings-display h3 {
+  color: var(--Colors-Text-Body-Strong);
+  margin: 0 0 var(--UI-Spacing-spacing-ml) 0;
+  width: 100%;
+}
+
+.bespoke .setting-item {
+  color: var(--Colors-Text-Body-Default);
+  margin-bottom: var(--UI-Spacing-spacing-s);
+  width: 100%;
+}
+
+.bespoke .setting-item:last-child {
+  margin-bottom: 0;
+}
+
+.bespoke .setting-item strong {
+  color: var(--Colors-Text-Body-Strong);
+  margin-right: var(--UI-Spacing-spacing-xs);
+}

@@ -1,0 +1,28 @@
+<!-- Pulse Chat Content Fragment (used by super simulation host) -->
+
+<main class="pulse-chat-layout">
+  <aside class="chat-sidebar" id="chat-sidebar">
+    <div class="chat-sidebar-header">
+      <h2 class="chat-sidebar-title">Messages</h2>
+    </div>
+    <div class="chat-conversation-list" id="chat-conversation-list"></div>
+  </aside>
+
+  <div class="chat-main" id="chat-main">
+    <div class="chat-main-header" id="chat-main-header">
+      <div class="chat-contact-info">
+        <span class="chat-contact-name" id="chat-contact-name">Select a conversation</span>
+        <span class="chat-contact-role" id="chat-contact-role"></span>
+      </div>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-empty">Choose a conversation from the sidebar to start chatting.</div>
+    </div>
+    <div class="chat-input-area" id="chat-input-area" hidden>
+      <form class="chat-input-form" id="chat-input-form">
+        <input type="text" class="input chat-input" id="chat-input" placeholder="Type a message..." autocomplete="off" />
+        <button type="submit" class="button button-primary chat-send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pulse Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./design-system/colors/colors.css">
+  <link rel="stylesheet" href="./design-system/spacing/spacing.css">
+  <link rel="stylesheet" href="./design-system/typography/typography.css">
+  <link rel="stylesheet" href="./design-system/components/button/button.css">
+  <link rel="stylesheet" href="./design-system/components/boxes/boxes.css">
+  <link rel="stylesheet" href="./design-system/components/input/input.css">
+  <link rel="stylesheet" href="./design-system/components/dropdown/dropdown.css">
+  <link rel="stylesheet" href="./design-system/components/tags/tags.css">
+  <link rel="stylesheet" href="./design-system/components/modal/modal.css">
+
+  <link rel="stylesheet" href="./bespoke-template.css" />
+  <link rel="stylesheet" href="./pulse-chat.css" />
+</head>
+<body class="bespoke">
+  <header class="header">
+    <h1 class="heading-small">Pulse Chat</h1>
+    <div class="spacer"></div>
+    <button id="btn-help" class="button button-text">Help</button>
+  </header>
+
+  <main class="pulse-chat-layout">
+    <aside class="chat-sidebar" id="chat-sidebar">
+      <div class="chat-sidebar-header">
+        <h2 class="chat-sidebar-title">Messages</h2>
+      </div>
+      <div class="chat-conversation-list" id="chat-conversation-list"></div>
+    </aside>
+
+    <div class="chat-main" id="chat-main">
+      <div class="chat-main-header" id="chat-main-header">
+        <div class="chat-contact-info">
+          <span class="chat-contact-name" id="chat-contact-name">Select a conversation</span>
+          <span class="chat-contact-role" id="chat-contact-role"></span>
+        </div>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-empty">Choose a conversation from the sidebar to start chatting.</div>
+      </div>
+      <div class="chat-input-area" id="chat-input-area" hidden>
+        <form class="chat-input-form" id="chat-input-form">
+          <input type="text" class="input chat-input" id="chat-input" placeholder="Type a message..." autocomplete="off" />
+          <button type="submit" class="button button-primary chat-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="./standalone.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Design System Component Showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Fonts (Work Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Design System Foundations -->
+  <link rel="stylesheet" href="../design-system/colors/colors.css">
+  <link rel="stylesheet" href="../design-system/spacing/spacing.css">
+  <link rel="stylesheet" href="../design-system/typography/typography.css">
+
+  <!-- Design System Components -->
+  <link rel="stylesheet" href="../design-system/components/button/button.css">
+  <link rel="stylesheet" href="../design-system/components/boxes/boxes.css">
+  <link rel="stylesheet" href="../design-system/components/input/input.css">
+  <link rel="stylesheet" href="../design-system/components/dropdown/dropdown.css">
+  <link rel="stylesheet" href="../design-system/components/tags/tags.css">
+  <link rel="stylesheet" href="../design-system/components/modal/modal.css">
+
+  <!-- Template-specific components (layout, utilities, temporary components) -->
+  <link rel="stylesheet" href="../bespoke-template.css" />
+  <link rel="stylesheet" href="./example-app.css" />
+</head>
+<body class="bespoke">
+  <!-- Navigation Header -->
+  <header class="header">
+    <h1 class="heading-small">Component Showcase</h1>
+    <div class="spacer"></div>
+    <button id="btn-help" class="button button-text">Help</button>
+  </header>
+
+  <!-- Main Application Content -->
+  <main class="main-layout">
+    <!-- Sidebar with Input Controls -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h2 class="heading-small">Controls</h2>
+
+        <div class="control-group">
+          <label for="counter-label" class="body-small">Counter Label</label>
+          <input type="text" id="counter-label" class="input" placeholder="Enter label..." value="Counter">
+        </div>
+
+        <div class="control-group">
+          <label class="body-small">Increment Amount</label>
+          <div id="increment-dropdown" style="width: 100%;"></div>
+        </div>
+
+        <div class="control-group control-group-buttons">
+          <button id="btn-increment" class="button button-primary">Increment</button>
+          <button id="btn-decrement" class="button button-secondary">Decrement</button>
+        </div>
+
+        <div class="control-group">
+          <button id="btn-reset" class="button button-danger">Reset</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area with Visual Display -->
+    <div class="content-area">
+      <div class="display-container">
+        <!-- Counter Display Box -->
+        <div class="box card counter-display">
+          <h2 id="display-label" class="heading-small">Counter</h2>
+          <div class="counter-value" id="counter-value">0</div>
+        </div>
+
+        <!-- Status Tags -->
+        <div class="tags-container">
+          <div class="tag" id="status-tag-primary">Active</div>
+          <div class="tag success" id="status-tag-positive" style="display: none;">Positive</div>
+          <div class="tag error" id="status-tag-negative" style="display: none;">Negative</div>
+        </div>
+
+        <!-- Settings Display -->
+        <div class="box card settings-display">
+          <h3 class="heading-xxxsmall">Current Settings</h3>
+          <div class="setting-item body-small">
+            <strong>Label:</strong> <span id="display-label-value">Counter</span>
+          </div>
+          <div class="setting-item body-small">
+            <strong>Increment:</strong> <span id="display-increment-value">1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Core Scripts -->
+  <script type="module" src="../design-system/components/dropdown/dropdown.js"></script>
+  <script type="module" src="./example-app.js"></script>
+</body>
+</html>
