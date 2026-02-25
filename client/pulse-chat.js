@@ -75,6 +75,7 @@ let conversations = [];
 let activeConversationId = null;
 let _abortController = null;
 let _context = {};
+let _apiBase = '';
 
 const DATA_VERSION = 2;
 
@@ -232,7 +233,7 @@ async function sendMessage(text) {
       content: m.text
     }));
 
-    const res = await fetch('/api/chat', {
+    const res = await fetch(_apiBase + '/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: apiMessages, persona: conv.persona })
@@ -283,6 +284,7 @@ function selectConversation(convId) {
 
 export function init(context = {}) {
   _context = context;
+  _apiBase = (context.config && context.config.basePath) || '';
   _abortController = new AbortController();
   const signal = _abortController.signal;
 
@@ -320,6 +322,7 @@ export function destroy() {
   conversations = [];
   activeConversationId = null;
   _context = {};
+  _apiBase = '';
 }
 
 export function onAction(action) {
