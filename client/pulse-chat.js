@@ -219,6 +219,7 @@ async function sendMessage(text) {
     _context.emit('chat:message-sent', {
       conversationId: conv.id,
       contactName: conv.name,
+      sender: 'user',
       text: text.trim()
     });
   }
@@ -252,6 +253,7 @@ async function sendMessage(text) {
       _context.emit('chat:message-received', {
         conversationId: conv.id,
         contactName: conv.name,
+        sender: conv.name,
         text: data.response
       });
     }
