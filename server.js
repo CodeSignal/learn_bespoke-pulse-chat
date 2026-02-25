@@ -22,6 +22,7 @@ if (isProduction && !fs.existsSync(STATIC_DIR)) {
   throw new Error(`Production mode enabled but serve directory does not exist: ${STATIC_DIR}`);
 }
 const PORT = process.env.PORT || 3000;
+const OPENAI_BASE_URL = (process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1').replace(/\/+$/, '');
 
 const wsClients = new Set();
 
@@ -86,7 +87,7 @@ async function handleChatRequest(req, res) {
       content: persona || 'You are a helpful coworker in a workplace chat. Keep responses brief, friendly, and conversational (1-3 sentences).'
     };
 
-    const apiRes = await fetch('https://api.openai.com/v1/chat/completions', {
+    const apiRes = await fetch(`${OPENAI_BASE_URL}/chat/completions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
