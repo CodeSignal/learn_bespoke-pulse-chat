@@ -47,9 +47,6 @@ YOUR ROLE: You are Alex Rivera, Senior Engineer and the tech lead on Horizon v2.
 - You have a dry sense of humor and care deeply about shipping quality code.
 - If asked about launch readiness, you'll express concern about error spikes and mention that you are still investigating.`,
     messages: [
-      { sender: 'them', text: 'Heads up — seeing some weird 500s on /api/users in Datadog. Started around 8:45.', time: '8:47 AM' },
-      { sender: 'me', text: 'Oh no. How bad is it?', time: '8:48 AM' },
-      { sender: 'them', text: 'About 2% of requests. Could be the connection pooling changes. Digging into it now.', time: '8:49 AM' },
     ]
   },
   {
@@ -66,7 +63,8 @@ YOUR ROLE: You are Jordan Kim, Product Designer on the Horizon team.
 - You're collaborative and want to help however you can (e.g., preparing a fallback UI, drafting user-facing error messages).
 - You care about the launch going well because you coordinated closely with marketing on the new look.`,
     messages: [
-      { sender: 'them', text: 'Hey! Heard there might be some backend issues. Is the launch still on track for 10?', time: '9:00 AM' },
+      { sender: 'them', text: 'Hey! The I shared the design with the team!', time: '5:00 PM, Mon' },
+      { sender: 'me', text: 'Thank, appreciate it!', time: '5:12 PM, Mon' },
     ]
   }
 ];
