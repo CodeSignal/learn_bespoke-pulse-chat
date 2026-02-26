@@ -15,6 +15,10 @@ const copyModuleAssets = {
       resolve(__dirname, 'client/pulse-chat.css'),
       resolve(outDir, 'simulation.css')
     );
+    copyFileSync(
+      resolve(__dirname, 'client/help-content.html'),
+      resolve(outDir, 'help-content.html')
+    );
   }
 };
 
