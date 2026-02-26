@@ -29,7 +29,6 @@ YOUR ROLE: You are Sarah Chen, the Engineering Manager for the Horizon team.
     messages: [
       { sender: 'them', text: 'Morning! Big day today 🚀 How are you feeling about the launch?', time: '8:30 AM' },
       { sender: 'me', text: 'Feeling good! Ran through the checklist this morning. Everything on my end is green.', time: '8:35 AM' },
-      { sender: 'them', text: 'Love to hear it. Alex flagged some error spikes on the users endpoint — he\'s looking into it now. I\'ll keep you posted.', time: '8:50 AM' },
     ]
   },
   {
