@@ -80,8 +80,8 @@ html, body.bespoke {
 }
 
 .bespoke .chat-avatar.manager { background: var(--Colors-Base-Primary-600); }
-.bespoke .chat-avatar.peer { background: var(--Colors-Base-Success-600); }
-.bespoke .chat-avatar.designer { background: var(--Colors-Base-Warning-600); }
+.bespoke .chat-avatar.peer { background: var(--Colors-Base-Accent-Green-700); }
+.bespoke .chat-avatar.designer { background: var(--Colors-Base-Accent-Orange-500); }
 
 .bespoke .chat-conv-details {
   flex: 1;
